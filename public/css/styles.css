@@ -1,0 +1,272 @@
+/* MiniReset - Style normalizer */
+@import url('https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css');
+
+/* Project fonts */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc4AMP6lQ.woff2)
+    format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2)
+    format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmWUlfBBc4AMP6lQ.woff2)
+    format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+/* Constantes fuentes y colores */
+:root {
+  --yellow: #eac926;
+  --blue: #03264c;
+  --sky-blue: #1259c3;
+  --dark-gray: #666666;
+  --light-gray: #ebebeb;
+  --green: #39b54a;
+  --main-font: 'Roboto', sans-serif;
+  --paragraph: 12px;
+  --titles: 24px;
+  --product-price: 18px;
+  --product-detail: 16px;
+}
+
+/* Styles */
+* {
+  font-family: var(--main-font);
+  font-weight: 300;
+  font-size: var(--paragraph);
+}
+
+html {
+  background-color: var(--light-gray);
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+header {
+  background-color: var(--yellow);
+  padding: 10px;
+}
+
+.main-menu__top,
+.main-menu__bottom,
+.main-menu__menu--left,
+.main-menu__menu--right {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+
+.main-menu__top {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.main-menu__logo {
+  width: 200px;
+}
+
+.main-menu__search-bar {
+  margin: 0 30px;
+  position: relative;
+  max-width: 400px;
+  min-width: 200px;
+  width: 100%;
+  flex: 1 1;
+}
+
+#main-menu__search {
+  border: none;
+  padding: 10px 30px 10px 15px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#main-menu__search-button {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 5px;
+  padding: 10px 5px;
+}
+
+.burger-menu {
+  padding: 10px;
+  margin: 0 auto;
+  width: 32px;
+  text-align: center;
+  color: #ffffff;
+  background-color: var(--sky-blue);
+  border-radius: 3px;
+}
+
+.main-menu__bottom {
+  display: none;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.products__section-title {
+  color: var(--dark-gray);
+  font-size: var(--titles);
+}
+
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  background-color: #ffffff;
+  margin: 10px 0 0 0;
+  width: 300px;
+  flex: 0 0 100%;
+}
+
+.product__details {
+  border-top: 1px solid var(--light-gray);
+  padding: 15px;
+  position: relative;
+}
+
+.product__icon {
+  padding: 5px;
+  border: 1px solid var(--green);
+  border-radius: 50%;
+  font-size: 16px;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  background-color: #ffffff;
+}
+
+.product__icon,
+.product__discount {
+  color: var(--green);
+}
+
+.product__price {
+  font-size: var(--product-price);
+}
+
+footer {
+  background-color: #ffffff;
+  padding-top: 60px;
+}
+
+.service-benefit {
+  text-align: center;
+  margin: 0 auto 60px auto;
+  width: 250px;
+}
+.service-benefit__icon {
+  color: var(--sky-blue);
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.service-benefit__title {
+  font-size: 15px;
+}
+
+.create-form {
+  padding: 20px 15px;
+}
+
+.control-formulario {
+  margin-bottom: 15px;
+}
+
+.control-formulario label {
+  margin-bottom: 5px;
+  font-style: italic;
+  display: block;
+}
+
+.control {
+  width: 100%;
+  padding: 8px;
+}
+
+.boton-formulario {
+  background-color: var(--green);
+  border: none;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 426px) {
+  /* .main-menu__top {
+    justify-content: space-between;
+  } */
+
+  .main-menu__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-menu__bottom .main-menu__item {
+    margin: 0 10px;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .products__list {
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  .product {
+    margin-left: 10px;
+    flex: 0 0 45%;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .product {
+    box-shadow: 0 0 10px rgba(100, 100, 100);
+    flex: 0 0 30%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .product {
+    box-shadow: 0 0 10px rgba(100, 100, 100);
+    flex: 0 0 23%;
+  }
+}
