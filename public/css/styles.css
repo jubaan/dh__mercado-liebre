@@ -137,6 +137,10 @@ main {
   padding: 15px 0;
 }
 
+.promotion img {
+  width: 100%;
+}
+
 .products__section-title {
   color: var(--dark-gray);
   font-size: var(--titles);
@@ -254,6 +258,12 @@ footer {
   .product {
     margin-left: 10px;
     flex: 0 0 45%;
+  }
+
+  main form {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
