@@ -20,6 +20,6 @@ app.get('/login', (req, res) => {
 
 app.listen(port, () =>
   console.log(
-    `Server running in port ${port}, please visit https:localhost:${port}`
+    `Server running in port ${port}, please visit http://localhost:${port}`
   )
 );
