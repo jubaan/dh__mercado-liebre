@@ -88,9 +88,10 @@ header {
 }
 
 .main-menu__top {
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .main-menu__logo {
@@ -101,9 +102,19 @@ header {
   margin: 0 30px;
   position: relative;
   max-width: 400px;
-  min-width: 200px;
+  min-width: 100px;
   width: 100%;
-  flex: 1 1;
+}
+
+.main-menu__logo,
+.spacer,
+.main-menu__search,
+.main-menu__message {
+  margin-bottom: 15px;
+}
+
+.spacer {
+  flex: 1 0 100%;
 }
 
 #main-menu__search {
@@ -141,13 +152,19 @@ main {
   padding: 15px 0;
 }
 
-.promotion img {
+.promotion {
+  background: url(/img/img-home-banner.jpg) center center;
+  background-size: cover;
+  height: 110px;
   width: 100%;
+  margin-top: 170px;
 }
 
 .products__section-title {
   color: var(--dark-gray);
   font-size: var(--titles);
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .products__list {
@@ -188,9 +205,23 @@ main {
   font-size: var(--product-price);
 }
 
+.product__details .product__name {
+  display: none;
+}
+
+.product__details::hover .product__name {
+  display: block;
+}
+
 footer {
   background-color: #ffffff;
   padding-top: 60px;
+  padding: 60px 15px 30px 15px;
+}
+
+.service {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .service-benefit {
@@ -237,10 +268,13 @@ footer {
 }
 
 @media only screen and (min-width: 426px) {
-  /* .main-menu__top {
-    justify-content: space-between;
-  } */
-
+  .promotion {
+    background: url(/img/img-home-banner.jpg) center center;
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+    margin-top: 110px;
+  }
   .main-menu__bottom {
     display: flex;
     justify-content: space-between;
@@ -253,6 +287,10 @@ footer {
   .burger-menu {
     display: none;
   }
+
+  .spacer {
+  flex: 1 0;
+}
 
   .products__list {
     justify-content: space-around;
@@ -275,6 +313,14 @@ footer {
   .product {
     box-shadow: 0 0 10px rgba(100, 100, 100);
     flex: 0 0 30%;
+  }
+
+  .promotion {
+    background: url(/img/img-home-banner.jpg) center center;
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+    margin-top: 110px;
   }
 }
 

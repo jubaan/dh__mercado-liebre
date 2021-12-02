@@ -20,17 +20,19 @@
               alt="Mercado Liebre"
               class="main-menu__logo"
           /></a>
+          <div class="spacer"></div>
           <form action="GET" class="main-menu__search-bar">
             <input
-              type="text"
-              name="main-menu__search"
-              id="main-menu__search"
-              placeholder="Buscar productos, marcas..."
+            type="text"
+            name="main-menu__search"
+            id="main-menu__search"
+            placeholder="Buscar productos, marcas..."
             />
             <button type="submit" id="main-menu__search-button">
               <i class="fas fa-search"></i>
             </button>
           </form>
+          <div class="spacer"></div>
           <p class="main-menu__message">
             <i class="fas fa-hand-holding-usd"></i> Compra en cuotas y sin
             tarjeta de credito
@@ -69,7 +71,6 @@
       <div class="burger-menu"><i class="fas fa-bars"></i></div>
     </header>
     <div class="promotion">
-      <img src="/img/img-home-banner.jpg" alt="No te pierdas ninguna venta" />
     </div>
     <main>
       <section class="products">
@@ -182,33 +183,35 @@
       </section>
     </main>
     <footer>
-      <div class="service-benefit credit-card">
-        <i class="fas fa-credit-card service-benefit__icon"></i>
-        <h2 class="service-benefit__title">Paga con tarjeta o en efectivo</h2>
-        <p class="service-benefit__description">
-          Con MecadoLiebreCash tenes cuotas sin interes con tarjeta o efectivo
-          en puntos de pago. ¡Y siempre es seguro!
-        </p>
-      </div>
-      <div class="service-benefit free-shipping">
-        <i class="fas fa-gift service-benefit__icon"></i>
-        <h2 class="service-benefit__title">Envio gratis desde los $2.500</h2>
-        <p class="service-benefit__description">
-          Solo por estar registrado en Mercado Liebre tenes envios gratis en
-          miles de productos. Es un beneficio de Mercado Puntos.
-        </p>
-      </div>
-      <div class="service-benefit security">
-        <i class="fas fa-user-shield service-benefit__icon"></i>
-        <h2 class="service-benefit__title">Seguridad de principio a fin</h2>
-        <p class="service-benefit__description">
-          ¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas
-          hacer porque estas siempre protegid@.
-        </p>
+      <div class="service">
+        <div class="service-benefit credit-card">
+          <i class="fas fa-credit-card service-benefit__icon"></i>
+          <h2 class="service-benefit__title">Paga con tarjeta o en efectivo</h2>
+          <p class="service-benefit__description">
+            Con MecadoLiebreCash tenes cuotas sin interes con tarjeta o efectivo
+            en puntos de pago. ¡Y siempre es seguro!
+          </p>
+        </div>
+        <div class="service-benefit free-shipping">
+          <i class="fas fa-gift service-benefit__icon"></i>
+          <h2 class="service-benefit__title">Envio gratis desde los $2.500</h2>
+          <p class="service-benefit__description">
+            Solo por estar registrado en Mercado Liebre tenes envios gratis en
+            miles de productos. Es un beneficio de Mercado Puntos.
+          </p>
+        </div>
+        <div class="service-benefit security">
+          <i class="fas fa-user-shield service-benefit__icon"></i>
+          <h2 class="service-benefit__title">Seguridad de principio a fin</h2>
+          <p class="service-benefit__description">
+            ¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas
+            hacer porque estas siempre protegid@.
+          </p>
+        </div>
       </div>
       <p class="copyright">Copyright &copy; 1999-2020 MercadoLiebre S.R.L.</p>
     </footer>
-    <form action="/crear-producto" method="POST" class="create-form">
+    <!-- <form action="/crear-producto" method="POST" class="create-form">
       <div class="control-formulario">
         <label for="">Nombre del producto:</label>
         <input type="text" name="nombre" class="control" />
@@ -249,6 +252,6 @@
       </div>
       <button type="reset" class="boton-formulario">Borrar</button>
       <button type="submit" class="boton-formulario">Guardar</button>
-    </form>
+    </form> -->
   </body>
 </html>
